@@ -2,7 +2,7 @@ pipeline {
 
 	agent any
 	tools {
-		 jdk 'JDK17'          // Name from global configuration
+		 jdk 'jdk17'          // Name from global configuration
         maven 'm360'
 	}
 
