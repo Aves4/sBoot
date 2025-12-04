@@ -7,6 +7,13 @@ pipeline {
 	}
 
 	stages {
+		stage('Debug Java') {
+            steps {
+                sh 'echo $JAVA_HOME'
+                sh 'ls -l $JAVA_HOME/bin'
+                sh 'java -version || true'
+            }
+        }
 	  stage('build') {
 		steps {
 		  sh 'mvn install -DskipTests'
