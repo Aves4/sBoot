@@ -32,7 +32,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'target/**.jar', followSymlinks: false
+            archiveArtifacts artifacts: 'target/**/*', followSymlinks: false
             junit stdioRetention: '', testResults: 'target/surefire-reports/*.xml'
         }
     }
