@@ -2,9 +2,8 @@ pipeline {
 
 	agent any
 	tools {
-		
 		 jdk 'JDK17'          // Name from global configuration
-        maven 'Maven3.9'
+        maven 'm360'
 	}
 
 	stages {
